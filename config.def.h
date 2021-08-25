@@ -77,7 +77,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,             		XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY,                       XK_q,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -115,9 +115,9 @@ static Key keys[] = {
 	{ 0,            		XK_Print,  spawn,      	   {.v = scrotcmd } },
 	{ ShiftMask,    		XK_Print,  spawn,      	   {.v = scrotfocusedcmd } },
 	{ ControlMask,  		XK_Print,  spawn,      	   SHCMD("sleep 1s;scrot --select") },
-	{ MODKEY|ShiftMask,             XK_t,  scratchpad_show, {0} },
-	{ MODKEY|ShiftMask,             XK_y,  scratchpad_hide, {0} },
-	{ MODKEY|ShiftMask,             XK_u,  scratchpad_remove,{0} },
+	{ MODKEY,             XK_w,  scratchpad_show, {0} },
+	{ MODKEY,             XK_e,  scratchpad_hide, {0} },
+	{ MODKEY,             XK_r,  scratchpad_remove,{0} },
 };
 
 /* button definitions */
