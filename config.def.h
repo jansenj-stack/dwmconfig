@@ -109,6 +109,9 @@ static Key keys[] = {
 	{ 0,            XK_Print,   spawn,      {.v = scrotcmd } },
 	{ ShiftMask,    XK_Print,   spawn,      {.v = scrotfocusedcmd } },
 	{ ControlMask,  XK_Print,   spawn,      SHCMD("sleep 1s;scrot --select") },
+	{ MODKEY,                       XK_minus, scratchpad_show, {0} },
+	{ MODKEY|ShiftMask,             XK_minus, scratchpad_hide, {0} },
+	{ MODKEY,                       XK_equal,scratchpad_remove,{0} },
 };
 
 /* button definitions */
