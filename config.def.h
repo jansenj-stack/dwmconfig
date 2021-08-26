@@ -68,7 +68,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *scrotcmd[]  = { "scrot", "-d3", "/home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
-static const char *scrotfocusedcmd[]  = { "scrot", "--focused", "/home/username/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
+static const char *scrotfocusedcmd[]  = { "scrot", "--focused", "/home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
 
 /*First arg only serves to match against key in rules*/
 static const char *scratchpadcmd[] = {"s", "st", "-t", "scratchpad", NULL}; 
@@ -115,7 +115,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_c,      quit,           {0} },
 	{ 0,            		XK_Print,  spawn,      	   {.v = scrotcmd } },
 	{ ShiftMask,    		XK_Print,  spawn,      	   {.v = scrotfocusedcmd } },
-	{ ControlMask,  		XK_Print,  spawn,      	   SHCMD("sleep 1s;scrot --select") },
+	{ ControlMask,  		XK_Print,  spawn,      	   SHCMD("sleep 1s;scrot --select /home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg") },
 	{ MODKEY,             XK_w,  scratchpad_show, {0} },
 	{ MODKEY,             XK_e,  scratchpad_hide, {0} },
 	{ MODKEY,             XK_r,  scratchpad_remove,{0} },
