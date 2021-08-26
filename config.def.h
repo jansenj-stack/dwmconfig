@@ -71,7 +71,7 @@ static const char *scrotcmd[]  = { "scrot", "-d3", "/home/marsing/Pictures/scree
 static const char *scrotfocusedcmd[]  = { "scrot", "--focused", "/home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
 
 /*First arg only serves to match against key in rules*/
-static const char *scratchpadcmd[] = {"s", "urxvt", "-T", "scratchpad", NULL}; 
+static const char *scratchpadcmd[] = {"s", "urxvt", "-T", "scratchpad", "-g", "73x21+655+350", NULL}; 
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
