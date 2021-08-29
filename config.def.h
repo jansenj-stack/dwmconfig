@@ -73,7 +73,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
-static const char *scrotcmd[]  = { "scrot", "-d3", "/home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
+static const char *scrotcmd[]  = { "scrot", "-q 100", "/home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
 static const char *scrotfocusedcmd[]  = { "scrot", "--focused", "/home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
 
 /*
