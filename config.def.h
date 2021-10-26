@@ -73,8 +73,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
-static const char *scrotcmd[]  = { "scrot", "-q 100", "/home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
-static const char *scrotfocusedcmd[]  = { "scrot", "--focused", "/home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
+static const char *scrotcmd[]  = { "scrot", "-q 100", "/home/marsing/pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
+static const char *scrotfocusedcmd[]  = { "scrot", "--focused", "/home/marsing/pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL  };
 
 /*
  * Xresources preferences to load at startup
@@ -141,7 +141,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_c,      quit,           {0} },
 	{ 0,            		XK_Print,  spawn,      	   {.v = scrotcmd } },
 	{ ShiftMask,    		XK_Print,  spawn,      	   {.v = scrotfocusedcmd } },
-	{ ControlMask,  		XK_Print,  spawn,      	   SHCMD("sleep 1s;scrot --select /home/marsing/Pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg") },
+	{ ControlMask,  		XK_Print,  spawn,      	   SHCMD("sleep 1s;scrot --select /home/marsing/pictures/screenshots/%Y-%m-%d-%s_$wx$h.jpg") },
 	{ MODKEY,             XK_w,  scratchpad_show, {0} },
 	{ MODKEY,             XK_e,  scratchpad_hide, {0} },
 	{ MODKEY,             XK_r,  scratchpad_remove,{0} },
