@@ -1,5 +1,5 @@
 My custom build for DWM. Built around using urxvt as the terminal emulator.
 Includes screenshot functionality using scrot, pertag, fakefullscreen, rugaps, namedscratchpads, dynamicscratchpads, dynamic swallowing, xresources, and systray.
 Keybindings for everything can be found in config.def.h
-My solution for dynamic swallowing was to add a keybind to bashrc which prints "dwmswallow $WINDOWID; " to the command line due to my lack of ability to write bash.
+My solution for dynamic swallowing was to add a keybind to bashrc which prints "dwmswallow $WINDOWID; " to the command line 
 The build is obviously bloated at this point and no patch will apply cleanly, meaning that every patch must be applied by hand.
